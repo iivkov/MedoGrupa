@@ -21,7 +21,7 @@ const HomeComponent = () => {
                 <div class="text">Izrada internetske stranice sufinancirana je sredstvima tehničke pomoći Operativnog programa „Konkurentnost i kohezija“ iz Europskog fonda za regionalni razvoj.</div>
             </div>
             <div className="main_content">
-                <h1>Dobrodošli!</h1>
+                <h1>DOBRODOŠLI!</h1>
                 <div className="container">
                     {/* <div> */}
                     <div className="box">
