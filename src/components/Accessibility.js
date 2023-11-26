@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Accessibility = ({
     increaseFontSize,
     decreaseFontSize,
@@ -15,8 +16,8 @@ const Accessibility = ({
             <summary>Pristupačnost</summary>
             <i class='fas fa-universal-access' style={{color: "red"}}></i>
             <div className="accessibility-buttons">
-                {/* <button onClick={increaseFontSize}>Povećaj tekst</button>
-                <button onClick={decreaseFontSize}>Smanji tekst</button> */}
+                <button onClick={increaseFontSize}>Povećaj tekst</button>
+                <button onClick={decreaseFontSize}>Smanji tekst</button>
                 <button onClick={toggleGrayscale}>
                     {grayscale ? 'Isključi grayscale' : 'Uključi grayscale'}
                 </button>

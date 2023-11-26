@@ -40,10 +40,10 @@ function App() {
   };
 
   return (
-    <div className={`App ${grayscale ? 'grayscale' : ''} ${highContrast ? 'high-contrast' : ''}`}>
+    <div className={`App ${grayscale ? 'grayscale' : ''} ${highContrast ? 'high-contrast' : ''}`} style={{ fontSize: `${fontSize}px` }}>
     {/* < > */}
       <BrowserRouter>
-        <Navbar />
+        <Navbar fontSize={fontSize} />
         <Accessibility
         increaseFontSize={increaseFontSize}
         decreaseFontSize={decreaseFontSize}
@@ -54,11 +54,11 @@ function App() {
         highContrast={highContrast}
       />
         <Routes>
-          <Route path="/" exact element={<HomeComponent />} />
-          <Route path="/o-nama" element={<AboutComponent />} />
-          <Route path="/kontakt" element={<ContactComponent />} />
+          <Route path="/" exact element={<HomeComponent fontSize={fontSize} />} />
+          <Route path="/o-nama" element={<AboutComponent fontSize={fontSize} />} />
+          <Route path="/kontakt" element={<ContactComponent fontSize={fontSize} />} />
         </Routes>
-        <Footer/>
+        <Footer fontSize={fontSize}/>
 		  </BrowserRouter>
     </div>
     // {/* </> */}

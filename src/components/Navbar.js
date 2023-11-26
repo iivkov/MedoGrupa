@@ -4,7 +4,7 @@ import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
 import Logo from '../assets/logo.png';
 import '../App.css';
 
-const Navbar = ({ highContrast }) => {
+const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
 
   const handleShowNavbar = () => {
