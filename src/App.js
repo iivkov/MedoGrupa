@@ -56,8 +56,6 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomeComponent />} />
           <Route path="/o-nama" element={<AboutComponent />} />
-          <Route path="/djelatnosti" element={<HomeComponent />} />
-          <Route path="/projekti" element={<HomeComponent />} />
           <Route path="/kontakt" element={<ContactComponent />} />
         </Routes>
         <Footer/>

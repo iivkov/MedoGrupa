@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
-// import Logo from '../assets/logo.svg';
 import Logo from '../assets/logo.png';
 import '../App.css';
 
@@ -30,12 +29,6 @@ const Navbar = ({ highContrast }) => {
         </li>
         <li>
           <NavLink to="/o-nama">O nama</NavLink>
-        </li>
-        <li>
-          <NavLink to="/djelatnosti">Djelatnosti</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projekti">Projekti</NavLink>
         </li>
         <li>
           <NavLink to="/kontakt">Kontakt</NavLink>
