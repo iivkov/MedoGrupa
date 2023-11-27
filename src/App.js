@@ -9,24 +9,24 @@ import ContactComponent from './components/ContactComponent';
 import Accessibility from './components/Accessibility';
 
 function App() {
-  const [fontSize, setFontSize] = useState(16);
+  // const [fontSize, setFontSize] = useState(16);
   const [grayscale, setGrayscale] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
 
-  const increaseFontSize = () => {
-    if (fontSize * 1.15 <= 96) {
-      setFontSize(prevFontSize => prevFontSize * 1.15);
-    }
-  };
+  // const increaseFontSize = () => {
+  //   if (fontSize * 1.15 <= 96) {
+  //     setFontSize(prevFontSize => prevFontSize * 1.15);
+  //   }
+  // };
 
-  const decreaseFontSize = () => {
-    if (fontSize * 0.9 >= 16) {
-      setFontSize(prevFontSize => prevFontSize * 0.9);
-    }
-  };
+  // const decreaseFontSize = () => {
+  //   if (fontSize * 0.9 >= 16) {
+  //     setFontSize(prevFontSize => prevFontSize * 0.9);
+  //   }
+  // };
 
   const resetFontSize = () => {
-    setFontSize(16);
+    // setFontSize(16);
     setGrayscale(false);
     setHighContrast(false);
   };
@@ -40,13 +40,13 @@ function App() {
   };
 
   return (
-    <div className={`App ${grayscale ? 'grayscale' : ''} ${highContrast ? 'high-contrast' : ''}`} style={{ fontSize: `${fontSize}px` }}>
+    <div className={`App ${grayscale ? 'grayscale' : ''} ${highContrast ? 'high-contrast' : ''}`}>
     {/* < > */}
       <BrowserRouter>
-        <Navbar fontSize={fontSize} />
+        <Navbar/>
         <Accessibility
-        increaseFontSize={increaseFontSize}
-        decreaseFontSize={decreaseFontSize}
+        // increaseFontSize={increaseFontSize}
+        // decreaseFontSize={decreaseFontSize}
         resetFontSize={resetFontSize}
         toggleGrayscale={toggleGrayscale}
         toggleHighContrast={toggleHighContrast}
@@ -54,11 +54,11 @@ function App() {
         highContrast={highContrast}
       />
         <Routes>
-          <Route path="/" exact element={<HomeComponent fontSize={fontSize} />} />
-          <Route path="/o-nama" element={<AboutComponent fontSize={fontSize} />} />
-          <Route path="/kontakt" element={<ContactComponent fontSize={fontSize} />} />
+          <Route path="/" exact element={<HomeComponent/>} />
+          <Route path="/o-nama" element={<AboutComponent/>} />
+          <Route path="/kontakt" element={<ContactComponent/>} />
         </Routes>
-        <Footer fontSize={fontSize}/>
+        <Footer/>
 		  </BrowserRouter>
     </div>
     // {/* </> */}
