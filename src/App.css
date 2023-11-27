@@ -193,6 +193,12 @@ p {
   margin-right: 10px;
 }
 
+@media (max-width: 767px) {
+  .box iframe {
+    width: 100%;
+  }
+}
+
 .contact {
   width: auto;
   /* background-color: aquamarine; */
