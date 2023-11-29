@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+  --initial-h1-font-size: 30px; /* Postavite inicijalnu veličinu za h1 */
+  --initial-p-font-size: 20px; /* Postavite inicijalnu veličinu za p */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -156,13 +161,15 @@ body {
   
 
 h1 {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: var(--initial-h1-font-size);
     margin-bottom: 10px;
     text-align: center;
 }
 
 p {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: var(--initial-p-font-size);
 }
 
 .p-footer {
@@ -234,20 +241,46 @@ textarea {
 
 .accessibility-menu {
   position: fixed;
-  right: 20px;
+  top: 110px;
+  left: 10px;
+  /* position: relative; */
+  /* display: inline-block; */
 }
 
 .accessibility-buttons {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: calc(100% + 10px); 
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.accessibility-buttons.open {
+  visibility: visible; 
+  opacity: 1; 
+}
+
+.accessibility-icon {
+  position: relative; 
+  cursor: pointer;
+}
+
+.accessibility-menu.open .accessibility-icon {
+  z-index: 1;
 }
 
 .accessibility-buttons button {
   margin-bottom: 5px;
-  background-color: silver;
+  background-color: #00000033;
   color: black;
   border: none;
   height: 30px;
+  width: 150px;
 }
 
 .grayscale {
@@ -256,9 +289,5 @@ textarea {
 
 .high-contrast {
   background-color: #003399;
-  color: white;
-}
-
-.fb-icon {
   color: white;
 }

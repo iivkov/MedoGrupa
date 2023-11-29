@@ -1,30 +1,31 @@
 import React, { useState } from 'react';
-import { ReactComponent as AccessibilityLogo } from '../assets/facebook_logo.svg'
+import { ReactComponent as AccessibilityLogo } from '../assets/accessibility_logo.svg'
 
 const AccessibilityMenu = ({
-    // increaseFontSize,
-    // decreaseFontSize,
+    increaseFontSize,
+    decreaseFontSize,
     resetFontSize,
     toggleGrayscale,
     toggleHighContrast,
     grayscale,
     highContrast,
+    fontSize
 }) => {
     
-    const [showAccessibility, setShowAccessibility] = useState(false)
+    const [accessibilityMenuOpen, setAccessibilityMenuOpen] = useState(false);
     
-    const handleShowAccessibility = () => {
-        setShowAccessibility(!showAccessibility)
-    }
+    const handleAccessibilityIconClick = () => {
+        setAccessibilityMenuOpen(!accessibilityMenuOpen);
+    };
 
     return (
-    <div className={`accessibility-menu ${showAccessibility ? 'active' : ''}`}>
-        <div className="accessibility-icon" onClick={handleShowAccessibility}>
+    <div className={`accessibility-menu ${accessibilityMenuOpen ? 'open' : ''}`}>
+        <div className="accessibility-icon" onClick={handleAccessibilityIconClick}>
             <AccessibilityLogo />
         </div>
-        <div className='accessibility-buttons'>
-            {/* <button onClick={increaseFontSize}>Povećaj tekst</button>
-            <button onClick={decreaseFontSize}>Smanji tekst</button> */}
+        <div className={`accessibility-buttons ${accessibilityMenuOpen ? 'open' : ''}`} style={{ fontSize: `${fontSize}px` }}>
+            <button onClick={increaseFontSize}>Povećaj tekst</button>
+            <button onClick={decreaseFontSize}>Smanji tekst</button>
             <button onClick={toggleGrayscale}>
                 {grayscale ? 'Isključi grayscale' : 'Uključi grayscale'}
             </button>
