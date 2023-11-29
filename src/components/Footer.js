@@ -1,8 +1,5 @@
 import '../App.css'
-// import fb from '../assets/facebook.svg';
-// import { FaFacebook } from 'react-icons/fa';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { ReactComponent as FacebookLogo } from '../assets/facebook_logo.svg'
 
 const Footer = () => {
 
@@ -13,7 +10,7 @@ const Footer = () => {
     <div className='copyright'>
       <p className="p-footer">
         <a href="https://www.facebook.com/medogrupa" className="fb-icon" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} size="2x"/>
+          <FacebookLogo />
         </a>
       </p>
       <p className="p-footer">&copy; {year} Medo grupa d.o.o.</p>

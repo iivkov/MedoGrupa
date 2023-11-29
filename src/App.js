@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 import HomeComponent from "./components/HomeComponent";
 import AboutComponent from './components/AboutComponent';
 import ContactComponent from './components/ContactComponent';
-import Accessibility from './components/Accessibility';
+import AccessibilityMenu from './components/AccessibilityMenu';
 
 function App() {
   // const [fontSize, setFontSize] = useState(16);
@@ -44,7 +44,7 @@ function App() {
     {/* < > */}
       <BrowserRouter>
         <Navbar/>
-        <Accessibility
+        <AccessibilityMenu
         // increaseFontSize={increaseFontSize}
         // decreaseFontSize={decreaseFontSize}
         resetFontSize={resetFontSize}

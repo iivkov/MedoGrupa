@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Hamburger } from '../assets/hamburger.svg'
-import Logo from '../assets/logo.png';
+import { ReactComponent as HamburgerLogo } from '../assets/hamburger_logo.svg'
+import CompanyLogo from '../assets/medo_logo.png';
 import '../App.css';
 
 const Navbar = () => {
@@ -16,11 +16,11 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="logo">
         <a href="/" rel="noopener noreferrer">
-          <div><img src={Logo} alt="Logotip" /></div>
+          <div><img src={CompanyLogo} alt="Logotip" /></div>
         </a>
       </div>
     <div className="menu-icon" onClick={handleShowNavbar}>
-        <Hamburger />
+        <HamburgerLogo />
     </div>
     <div className={`nav-elements  ${showNavbar && 'active'}`}>
       <ul>
