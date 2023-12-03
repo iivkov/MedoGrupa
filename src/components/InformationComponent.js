@@ -1,12 +1,10 @@
 import React from 'react';
 import '../App.css';
 import slika from '../assets/SPORTSKA DVORANA_27.JPG';
-import EUnoteSite from './EUnoteSite';
 
-const HomeComponent = () => {
+const InformationComponent = () => {
     return (
     <div className="main_content">
-        <EUnoteSite/>
         <h1>Dobrodošli!</h1>
         <div className="container">
             {/* <div> */}
@@ -23,4 +21,4 @@ const HomeComponent = () => {
     );
 }
 
-export default HomeComponent;
+export default InformationComponent;

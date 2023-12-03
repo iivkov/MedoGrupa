@@ -1,9 +1,9 @@
-import '../App.css'
+import '../App.css';
 import EU_logo from '../assets/EU_logo.png';
 import ESIF_logo from '../assets/ESIF_logo.png';
 import OPKK_logo from '../assets/OPKK_logo.png';
 
-const EUnote = () => {
+const EUnoteSite = () => {
 
   return (
     <div className="EU-note">
@@ -21,4 +21,4 @@ const EUnote = () => {
   )
 }
 
-export default EUnote
+export default EUnoteSite

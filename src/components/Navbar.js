@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { ReactComponent as HamburgerLogo } from '../assets/hamburger_logo.svg'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as HamburgerLogo } from '../assets/hamburger_logo.svg';
 import CompanyLogo from '../assets/medo_logo.png';
 import '../App.css';
 
@@ -29,6 +29,12 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/o-nama">O nama</NavLink>
+        </li>
+        <li>
+          <NavLink to="/podatci">Osnovni podatci</NavLink>
+        </li>
+        <li>
+          <NavLink to="/EU-projekti">EU projekti</NavLink>
         </li>
         <li>
           <NavLink to="/kontakt">Kontakt</NavLink>

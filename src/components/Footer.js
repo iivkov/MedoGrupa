@@ -1,5 +1,5 @@
-import '../App.css'
-import { ReactComponent as FacebookLogo } from '../assets/facebook_logo.svg'
+import '../App.css';
+import { ReactComponent as FacebookLogo } from '../assets/facebook_logo.svg';
 
 const Footer = () => {
 

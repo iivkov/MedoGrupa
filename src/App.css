@@ -2,6 +2,7 @@
 
 :root {
   --initial-h1-font-size: 30px; /* Postavite inicijalnu veličinu za h1 */
+  --initial-h2-font-size: 25px; /* Postavite inicijalnu veličinu za h1 */
   --initial-p-font-size: 20px; /* Postavite inicijalnu veličinu za p */
 }
 
@@ -165,6 +166,13 @@ h1 {
     font-size: var(--initial-h1-font-size);
     margin-bottom: 10px;
     text-align: center;
+}
+
+h2 {
+  /* font-size: 30px; */
+  font-size: var(--initial-h2-font-size);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
