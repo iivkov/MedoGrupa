@@ -24,8 +24,8 @@ const AccessibilityMenu = ({
             <AccessibilityLogo />
         </div>
         <div className={`accessibility-buttons ${accessibilityMenuOpen ? 'open' : ''}`} style={{ fontSize: `${fontSize}px` }}>
-            <button onClick={increaseFontSize}>Povećaj tekst</button>
-            <button onClick={decreaseFontSize}>Smanji tekst</button>
+            {/* <button onClick={increaseFontSize}>Povećaj tekst</button>
+            <button onClick={decreaseFontSize}>Smanji tekst</button> */}
             <button onClick={toggleGrayscale}>
                 {grayscale ? 'Isključi grayscale' : 'Uključi grayscale'}
             </button>

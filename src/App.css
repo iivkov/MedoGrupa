@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --initial-h1-font-size: 30px; /* Postavite inicijalnu veličinu za h1 */
-  --initial-h2-font-size: 25px; /* Postavite inicijalnu veličinu za h1 */
-  --initial-p-font-size: 20px; /* Postavite inicijalnu veličinu za p */
+  --initial-h1-font-size: 30px; 
+  --initial-h2-font-size: 25px; 
+  --initial-p-font-size: 20px; 
 }
 
 body {
@@ -206,7 +206,20 @@ p {
   padding: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
+  transition: transform 0.5s ease-in-out;
 }
+
+.box.left-enter {
+  transform: translateX(-50%);
+}
+
+.box.right-enter {
+  transform: translateX(50%);
+}
+
+/* .box.enter {
+  transform: translateX(0);
+} */
 
 @media (max-width: 767px) {
   .box iframe {
