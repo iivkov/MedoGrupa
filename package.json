@@ -1,5 +1,6 @@
 {
   "name": "medogrupa",
+  "homepage": "http://medogrupa.hr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
