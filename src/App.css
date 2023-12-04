@@ -91,13 +91,13 @@ body {
     top: 100px;
     background-color: #003399;
     width: 0px;
-    height: calc(100vh - 60px);
+    height: calc(30vh);
     transition: all 0.2s ease-in;
     overflow: hidden;
   }
 
   .nav-elements.active {
-    width: 250px;
+    width: 60%;
   }
 
   .nav-elements ul {
@@ -207,14 +207,17 @@ p {
   margin-bottom: 10px;
   margin-right: 10px;
   transition: transform 0.5s ease-in-out;
+  z-index: -1;
 }
 
 .box.left-enter {
-  transform: translateX(-50%);
+  transform: translateX(-40%);
+  /* z-index: -1; */
 }
 
 .box.right-enter {
-  transform: translateX(50%);
+  transform: translateX(40%);
+  /* z-index: -1; */
 }
 
 /* .box.enter {
