@@ -12,7 +12,6 @@ const InformationComponent = () => {
     <div className="main_content">
         <h1>Osnovni podatci</h1>
         <div className="container">
-            {/* <div> */}
             <div className={`box left ${animate ? 'enter' : 'left-enter'}`}>
                 <p>MEDO GRUPA d.o.o. za građenje, trgovinu i usluge</p>
                 <p>Lička 21</p>

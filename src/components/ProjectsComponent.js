@@ -16,7 +16,6 @@ const ProjectsComponent = () => {
                     Nabavom novih roba i/ili usluga, Prijavitelj će povećati svoju: konkurentnost i održivost poslovanja i proizvodne kapacitete. Prijavitelj će otvoriti nova tržišta i povećat će mu se prihod. 
                     Projekt je usmjeren na djelatnike Prijavitelja, kupce i dobavljače kao ciljne skupine projekta, ali i sve građane Republike Hrvatske i to upravo kroz očuvanje postojećih radnih mjesta i otvaranje novih. 
                     Projekt vodi računa o zaštiti okoliša.</p>
-            {/* <div> */}
             <div className="box">
                 <h3>Informacije o troškovima</h3>
                 <p>Ukupni prihvatljivi troškovi (EUR): 212.549,87</p>

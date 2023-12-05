@@ -134,41 +134,41 @@ body {
 /* novo */
 
 .EU-note {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    /* margin: 30px; */
-    /* margin-top: 25px; */
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    border: 1px solid #ccc;
-    /* height: 30px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* margin: 30px; */
+  /* margin-top: 25px; */
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid #ccc;
+  /* height: 30px; */
 }
   
-  .image {
-    flex: 1;
-    margin: 10px;
-  }
+.image {
+  flex: 1;
+  margin: 10px;
+}
   
-  .image img {
-    max-width: 100%;
-    height: auto;
-  }
+.image img {
+  max-width: 100%;
+  height: auto;
+}
   
-  .text {
-    text-align: center;
-    flex-basis: 100%;
-  }
+.text {
+  text-align: center;
+  flex-basis: 100%;
+}
   
 
 h1 {
-    /* font-size: 30px; */
-    font-size: var(--initial-h1-font-size);
-    margin-bottom: 10px;
-    text-align: center;
+  /* font-size: 30px; */
+  font-size: var(--initial-h1-font-size);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 h2 {
@@ -179,8 +179,8 @@ h2 {
 }
 
 p {
-    /* font-size: 20px; */
-    font-size: var(--initial-p-font-size);
+  /* font-size: 20px; */
+  font-size: var(--initial-p-font-size);
 }
 
 .p-footer {
@@ -188,17 +188,16 @@ p {
 }
 
 .main_content {
-    padding: 20px;
-    margin: 20px;
-    text-align: justify;
-    /* border: 1px solid #ccc; */
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  /* border: 1px solid #ccc; */
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 20px;
 }
@@ -236,12 +235,12 @@ p {
 
 .contact {
   width: auto;
-  /* background-color: aquamarine; */
   padding: 10px;
 }
 
 label {
   height: 30px;
+  display: block;
 }
 
 input {

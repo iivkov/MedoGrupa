@@ -13,7 +13,6 @@ const AboutComponent = () => {
         <div className="main_content">
                 <h1>O nama</h1>
                 <div className="container">
-                    {/* <div> */}
                     <div className={`box left ${animate ? 'enter' : 'left-enter'}`}>
                         <p>Medo grupa d.o.o. građevinska je tvrtka s višegodišnjim iskustvom u izgradnji objekata prije svega niskogradnje, ali i visokogradnje. 
                             Osim izgradnje novih prometnica, bavimo se također održavanjem i sanacijom postojećih prometnica te ostalih asfaltiranih površina.</p>
