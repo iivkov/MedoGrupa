@@ -91,13 +91,16 @@ body {
     top: 100px;
     background-color: #003399;
     width: 0px;
-    height: calc(30vh);
+    /* height: calc(33vh); */
+    height: calc(100vh - 60px);
     transition: all 0.2s ease-in;
     overflow: hidden;
+    z-index: 1;
   }
 
   .nav-elements.active {
-    width: 60%;
+    width: 50%;
+    /* width: 250px; */
   }
 
   .nav-elements ul {
@@ -207,7 +210,7 @@ p {
   margin-bottom: 10px;
   margin-right: 10px;
   transition: transform 0.5s ease-in-out;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .box.left-enter {
@@ -269,6 +272,7 @@ textarea {
   left: 10px;
   /* position: relative; */
   /* display: inline-block; */
+  z-index: 1;
 }
 
 .accessibility-buttons {
