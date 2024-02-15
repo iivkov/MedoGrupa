@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef } from "react";
+import EUnoteSite from './EUnoteSite';
 import emailjs from '@emailjs/browser';
 import '../App.css';
 
@@ -29,6 +30,7 @@ const ContactComponent = () => {
 
 	return (
     <div className="main_content">
+        <EUnoteSite/>
         <h1>Kontakt</h1>
         <div className="container">
             <div className={`box left ${animate ? 'enter' : 'left-enter'}`}>
@@ -52,7 +54,7 @@ const ContactComponent = () => {
                     <button className="submit_button" type="submit">Pošalji</button>
                 </form>
             </div>
-        {/* <div className="spacer"></div> */}
+        <div className="spacer"></div>
             <div className={`box right ${animate ? 'enter' : 'right-enter'}`}>
                 <iframe title="Lokacija tvrtke" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.455398853749!2d16.4103034!3d45.4807735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766f1df91098b13%3A0x53ccf72758f1642d!2sLi%C4%8Dka%20ul.%2021%2C%2044000%2C%20Sisak!5e0!3m2!1shr!2shr!4v1700921606472!5m2!1shr!2shr" width="100%" height="400" style={{border: 0, allowfullscreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade"}}></iframe>
             </div>

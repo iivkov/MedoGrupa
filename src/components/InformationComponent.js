@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import EUnoteSite from './EUnoteSite';
 import '../App.css';
 
 const InformationComponent = () => {
@@ -10,6 +11,7 @@ const InformationComponent = () => {
 
     return (
     <div className="main_content">
+        <EUnoteSite/>
         <h1>Osnovni podatci</h1>
         <div className="container">
             <div className={`box left ${animate ? 'enter' : 'left-enter'}`}>
@@ -21,7 +23,7 @@ const InformationComponent = () => {
                 <p>Mobitel: +385 (0)98 226 148</p>
                 <p>E-pošta: info@medogrupa.hr</p>
             </div>
-            {/* <div className="spacer"></div> */}
+            <div className="spacer"></div>
             <div className={`box right ${animate ? 'enter' : 'right-enter'}`}>
                 <p>Ključna osoba: Marko Medarić, direktor</p>
                 <p>Godina osnutka: 2010.</p>

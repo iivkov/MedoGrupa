@@ -222,6 +222,10 @@ p {
   /* z-index: -1; */
 }
 
+.spacer {
+  width: 5px;
+}
+
 
 .box.left-enter {
   transform: translateX(-40%);

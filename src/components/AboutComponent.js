@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from 'react';
+import EUnoteSite from './EUnoteSite';
 import '../App.css';
 import anigif from '../assets/anigif.gif';
 
@@ -11,6 +12,7 @@ const AboutComponent = () => {
 
     return (
         <div className="main_content">
+                <EUnoteSite/>
                 <h1>O nama</h1>
                 <div className="container">
                     <div className={`box left ${animate ? 'enter' : 'left-enter'}`}>
@@ -19,7 +21,7 @@ const AboutComponent = () => {
                         <p>Svoje višegodišnje iskustvo i kvalitetu stekli smo izvodeći građevinske radove na području Grada Siska, Grada Petrinje, Grada Ivanić-Grada te Općine Križ. 
                             Također, surađivali smo s tvrtkama Swietelsky, Lagermax, Građenje, Centar za vozila Hrvatske i dr.</p>
                     </div>
-                {/* <div className="spacer"></div> */}
+                <div className="spacer"></div>
                     <div className={`box right ${animate ? 'enter' : 'right-enter'}`}>
                         <img src={anigif} alt="Slika građevinskih radova." style={{ width: '100%', height: 'auto' }} />
                     </div>
