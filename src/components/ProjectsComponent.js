@@ -22,7 +22,7 @@ const ProjectsComponent = () => {
                     Projekt vodi računa o zaštiti okoliša.</p>
         <div/>
         <div className="container">
-            <div className="box">
+            <div className="box-EU">
                 <h3>Podatci o korisniku</h3>
                 <p>Prijavitelj: MEDO GRUPA d.o.o. za građenje, trgovinu i usluge</p>
                 <p>Jedinstveni broj prijavitelja: 09863586313 </p>
@@ -31,22 +31,23 @@ const ProjectsComponent = () => {
                 <p>Telefon: +385 98226148</p>
                 <p>Odgovorna osoba: MARKO MEDARIĆ</p>
             </div>
-            <div className="box">
+            <div className="box-EU">
                 <h3>Vrijeme provedbe</h3>
                 <p>Početak provedbe: 21.04.2022.</p>
                 <p>Kraj provedbe: 19.10.2023.</p>
                 <p>Trajanje provedbe (mjeseci): 18</p>
             </div>
-            <div className="box">
+            <div className="box-EU">
                 <h3>Informacije o troškovima</h3>
                 <p>Ukupni prihvatljivi troškovi (EUR): 212.549,87</p>
                 <p>Ukupna bespovratna sredstva (EUR): 180.667,39 (EU sufinanciranje)</p>
             </div>
         </div>
+        </div>
         <EUnoteProject />
         <div className="container">
             <div className="activity-box">
-                    <h3>Aktivnosti projekta:</h3>
+                    <h3>Aktivnosti projekta</h3>
                     <p>Aktivnost 1: Ulaganje u materijalnu imovinu (1/2)</p>
                     <p>Aktivnost 2: Ulaganje u materijalnu imovinu (2/2)</p>
                     <p>Aktivnost 3: Marketing i promocija proizvoda i usluga</p>
@@ -60,15 +61,13 @@ const ProjectsComponent = () => {
         </div>
         <div className="container">
             <div className="activity-box">
-                    <h3>Sve aktivnosti nabave iz predmetnog projekta:</h3>
+                    <h3>Sve aktivnosti nabave iz predmetnog projekta</h3>
                     <p>1. planiran je postupak nabave</p>
                     <p>2. određene su karakteristike roba i/ili usluga koje se planiraju nabavljati u postupku nabave</p>
                     <p>3. proveden je postupak nabave</p>
                     <p>4. odabran je isporučitelj roba i/ili usluga</p>
-                    <p>5. predmetna aktivnost je provedena u cijelosti, kako je bilo planirano, sukladno propisanim pravilima
-i projektnim prijedlogom (pridržavanje vremenskih rokova početka i završetka provedbe aktivnosti)</p>
-                    <p>6. roba i/ili usluga je od strane odabranog isporučitelja isporučena na vrijeme, do roka određenog u
-Ugovora.</p>
+                    <p>5. predmetna aktivnost je provedena u cijelosti, kako je bilo planirano, sukladno propisanim pravilima i projektnim prijedlogom (pridržavanje vremenskih rokova početka i završetka provedbe aktivnosti)</p>
+                    <p>6. roba i/ili usluga je od strane odabranog isporučitelja isporučena na vrijeme, do roka određenog u Ugovoru.</p>
                     <p>7. zaključen je zapisnik o primopredaji roba i/ili usluga</p>
                     <p>8. izdan je račun od strane isporučitelja</p>
                     <p>9. račun je plaćen u roku</p>
@@ -80,8 +79,8 @@ Ugovora.</p>
             </div>
         </div>
         <EUnoteProject />
-    </div>
-    </div>
+        </div>
+    // </div>
     );
 }
 
