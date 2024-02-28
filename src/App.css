@@ -222,6 +222,10 @@ p {
   /* z-index: -1; */
 }
 
+.bottom-border {
+  border: 1px solid #003399;
+}
+
 .spacer {
   width: 5px;
 }
